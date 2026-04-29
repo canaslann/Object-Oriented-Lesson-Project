@@ -30,10 +30,9 @@ public class GameManagerTest {
         manager.addGame(new Game("Cyberpunk 2077", "RPG", 400.0, "CD Projekt Red"));
         manager.addGame(new Game("FIFA 24", "Spor", 700.0, "EA Sports"));
 
-        // 2. Act (Sadece "RPG" olanları filtrele)
         List<Game> rpgGames = manager.filterByCategory("RPG");
 
-        // 3. Assert (Doğrulama)
+        //Doğrulama
         assertEquals(2, rpgGames.size(), "Filtrelenen listede 2 oyun olmalıydı!");
         assertEquals("The Witcher 3", rpgGames.get(0).getGameName(), "İlk RPG oyunu Witcher 3 olmalı!");
         assertEquals("CD Projekt Red", rpgGames.get(0).getProducer(), "Yapımcı adı doğru eşleşmeli!");

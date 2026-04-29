@@ -89,7 +89,7 @@ public class GameManager {
             return;
         }
         for (Game g : games) {
-            System.out.println(g); // Burada Game sınıfındaki toString() çalışacak
+            System.out.println(g);
         }
         System.out.println("--------------------------------------------------------------------------------");
     }

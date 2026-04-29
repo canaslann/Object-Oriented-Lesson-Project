@@ -7,7 +7,6 @@ public class Game {
     private double basePrice;
     private String producer;
 
-    // 1. Constructor: Yeni oyun oluştururken kullanılır (Senin yazdığın, otomatik ID üreten)
     public Game(String gameName, String category, double basePrice, String producer) {
         this.gameId = generateGameID();
         this.gameName = gameName;
@@ -16,7 +15,6 @@ public class Game {
         this.producer = producer;
     }
 
-    // 2. Constructor: Veritabanından veri ÇEKERKEN kullanılır (Mevcut ID'yi korur)
     public Game(String gameId, String gameName, String category, double basePrice, String producer) {
         this.gameId = gameId;
         this.gameName = gameName;
