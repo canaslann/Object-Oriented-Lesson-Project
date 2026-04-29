@@ -11,7 +11,6 @@ public class GameManager {
     public void addGame(Game game) {
         String query = "INSERT INTO GAME (game_id, game_name, category, base_price, producer) VALUES (?, ?, ?, ?, ?)";
 
-        // BAĞLANTIYI TRY DIŞINA ALDIK (Kapanmasın diye)
         Connection conn = DatabaseConnection.getInstance().getConnection();
 
         try (PreparedStatement pstmt = conn.prepareStatement(query)) {
